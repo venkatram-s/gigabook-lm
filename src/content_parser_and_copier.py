@@ -1,11 +1,14 @@
 from pdfminer.high_level import extract_text
+from selenium.webdriver.common.keys import Keys
 
 # from tabula import read_pdf
 
 
-def text_extractor(pdf_filepath):
+def pdf_text_extractor(pdf_filepath):
     text = extract_text(pdf_filepath)
     return text
+
+def web_scraper(url):
 
 
 """

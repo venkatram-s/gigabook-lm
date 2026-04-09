@@ -1,3 +1,4 @@
 pdfminer.six
 PyPDF2
 llama-cpp-python
+selenium
