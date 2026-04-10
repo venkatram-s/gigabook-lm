@@ -6,3 +6,6 @@ Logs:
 - OK, we have some basic tools, that'll help me on the long run.
 - Fixed a bug in logger from double quotes to single quotes
 - Remember me, a function which checks if it has already processed a file or not, by using
+- Hasher function is ready
+- Now onto RAG, but we don't want to straightly jump to RAG, instead, we need a config creator that stores an user's settings.
+-Basic onboarding is here!
