@@ -3,6 +3,7 @@
 venv
 research
 table_assets
+research_vault
 
 test.py
 test.txt
