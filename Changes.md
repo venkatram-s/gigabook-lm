@@ -2,10 +2,17 @@ Logs:
 - PDF Text Extraction Works
 - Removed Input and Output from pdf_parser.py
 - Table Extraction, hmm that didn't work (:/)
-- Maybe selenium could be the ONE? We'll see
+- Maybe selenium could be the ONE for web scraping? We'll see
 - OK, we have some basic tools, that'll help me on the long run.
 - Fixed a bug in logger from double quotes to single quotes
-- Remember me, a function which checks if it has already processed a file or not, by using
+- Remember me, a function which checks if it has already processed a file or not, by using a .bin file
 - Hasher function is ready
 - Now onto RAG, but we don't want to straightly jump to RAG, instead, we need a config creator that stores an user's settings.
--Basic onboarding is here!
+- Basic onboarding is here!
+- Now, we can return onboarding config
+- Docling - Carefully, he's a hero
+- If i were to be honest, Docling's like those government agents in movies who say, and i quote "We'll Take It From Here".
+- OH God, I JINXED IT!!!
+- But still, i believe (with 0 basis) that Docling can assist me with chunking, you know?
+- PyMUPDF, can we trust him, maybe???
+- Maybe, i for sure know that i'm something's cooking

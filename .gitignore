@@ -1,0 +1,10 @@
+#directories
+
+venv
+research
+table_assets
+
+test.py
+test.txt
+test1.txt
+extracted_knowledge.md
