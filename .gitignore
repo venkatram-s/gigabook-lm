@@ -5,7 +5,9 @@ research
 table_assets
 research_vault
 
+#files
 test.py
 test.txt
 test1.txt
 extracted_knowledge.md
+table.pdf
