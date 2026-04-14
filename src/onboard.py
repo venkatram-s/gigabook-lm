@@ -1,13 +1,13 @@
 from json import dumps, load
-from os import makedirs
+from os import makedirs, path
 from pathlib import Path
 
 from pyinputplus import inputInt, inputNum, inputStr
 
 from basictools import *
 
-folder_str = str(Path.home()) + r"/.gigabook-lm"
-filepath_str = f"{folder_str}/config.json"
+folder_str = path.join(str(Path.home()), ".gigabook-lm")
+filepath_str = path.join(folder_str, "config.json")
 
 
 def config_file_creator():
