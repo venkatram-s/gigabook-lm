@@ -1,6 +1,7 @@
 from datetime import datetime
 from hashlib import sha256
 from os import path
+from pathlib import Path
 from socket import create_connection
 
 
@@ -41,8 +42,10 @@ def hasher(filepath):
 
 
 def remember_Me(file):
-    try:
-        with open("gatekeep.bin", "rb+") as f:
+    folder_str = path.join(str(Path.home()), ".gigabook-lm")
+    filepath_str = path.join(folder_str, "gatekeep.bin")
+    if if_file_exists(filepath_str):
+        with open(filepath_str, "rb") as f:
             files = pickle.load(f)
             if hasher(file) in files:
                 return True
@@ -51,8 +54,8 @@ def remember_Me(file):
                 f.truncate()
                 files.append(hasher(file))
                 pickle.dump(files, f)
-    except FileNotFoundError:
+    else:
         l = []
-        l.append(file)
-        with open("gatekeep.bin", "ab+") as f:
+        l.append(hasher(file))
+        with open(filepath_str, "wb") as f:
             pickle.dump(l, f)

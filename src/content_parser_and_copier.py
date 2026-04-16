@@ -1,10 +1,10 @@
 from os import makedirs, path
 from sys import platform
 import fitz
-from basictools import if_file_exists
+from basictools import if_file_exists,logger
 
 
-def litebook_parser(pdf_path, notebook_name):
+def pdf_parser(pdf_path, notebook_name):
     makedirs(notebook_name, exist_ok=True)
 
     asset_folder = path.join(notebook_name, "assets")
@@ -12,7 +12,7 @@ def litebook_parser(pdf_path, notebook_name):
 
     base_filename = path.basename(pdf_path)
     doc_name = path.splitext(base_filename)[0]
-    output_md_path = path.join(notebook_name, f"{doc_name}.md")
+    output_md_path = path.join(notebook_name, f"extracted_{doc_name}.md")
 
     try:
         file = fitz.open(pdf_path)
@@ -60,7 +60,7 @@ def text_processor(filepath,notebook_name):
         makedirs(notebook_name, exist_ok=True)
         base_filename = path.basename(filepath)
         doc_name = path.splitext(base_filename)[0]
-        output_md_path = path.join(notebook_name, f"{doc_name}.md")
+        output_md_path = path.join(notebook_name, f"extracted_{doc_name}.md")
 
         source=open(filepath,'r')
         source_data=source.read()
@@ -72,3 +72,14 @@ def text_processor(filepath,notebook_name):
          print(logger(f"Success! {filepath} has been processed!"))
     else:
         print(logger(f"File does not exist!"))
+
+def master_combiner(filename,output_file):
+   if (filename.startswith("extracted_"):
+       if not(remember_Me(filename)):
+           with open(output_file,"a+",encoding="utf-8") as destination:
+               with open(filename,"r",encoding="utf-8") as source:
+                   destination.writelines(source.readlines())
+       else:
+           logger(f"{filename} was already processed GigaBook-LM!")
+   else:
+       logger(f"{filename} was not processed by GigaBook-LM!")
