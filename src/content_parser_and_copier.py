@@ -3,7 +3,6 @@ from sys import platform
 import fitz
 from basictools import if_file_exists,logger
 
-
 def pdf_parser(pdf_path, notebook_name):
     makedirs(notebook_name, exist_ok=True)
 
@@ -83,3 +82,7 @@ def master_combiner(filename,output_file):
            logger(f"{filename} was already processed GigaBook-LM!")
    else:
        logger(f"{filename} was not processed by GigaBook-LM!")
+
+def chunk_provider(input_file):
+    with open(input_file,"r",encoding="utf-8") as f:
+        x=f.read()
