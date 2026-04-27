@@ -3,7 +3,7 @@ from hashlib import sha256
 from os import path
 from pathlib import Path
 from socket import create_connection
-
+from datetime import datetime
 
 def if_file_exists(filepath_str):
     if path.exists(filepath_str):
@@ -32,7 +32,7 @@ def strip_md(text):
 
 
 def logger(message):
-    return f'[datetime.now().strftime("%H:%M:%S")] ' + message
+    return f"[{datetime.now().strftime('%H:%M:%S')}] " + message
 
 
 def hasher(filepath):

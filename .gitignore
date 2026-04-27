@@ -4,6 +4,7 @@ venv
 research
 table_assets
 research_vault
+src\__pycache__
 
 #files
 test.py

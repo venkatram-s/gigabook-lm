@@ -1,7 +1,8 @@
 from os import makedirs, path
 from sys import platform
 import fitz
-from basictools import if_file_exists,logger
+from src.basictools import if_file_exists, logger
+from shutil import copyfileobj
 
 def pdf_parser(pdf_path, notebook_name):
     makedirs(notebook_name, exist_ok=True)
@@ -9,8 +10,8 @@ def pdf_parser(pdf_path, notebook_name):
     asset_folder = path.join(notebook_name, "assets")
     makedirs(asset_folder, exist_ok=True)
 
-    base_filename = path.basename(pdf_path)
-    doc_name = path.splitext(base_filename)[0]
+    base_input_file = path.basename(pdf_path)
+    doc_name = path.splitext(base_input_file)[0]
     output_md_path = path.join(notebook_name, f"extracted_{doc_name}.md")
 
     try:
@@ -18,8 +19,7 @@ def pdf_parser(pdf_path, notebook_name):
         md_output = []
 
         for page_num, page in enumerate(file, start=1):
-            md_output.append(f"\n\n## --- {base_filename} | Page {page_num} ---\n")
-
+            md_output.append(f"\n\n## --- {base_input_file} | Page {page_num} ---\n")
             page_dict = page.get_text("dict")
             for b in page_dict["blocks"]:
                 if b["type"] == 0:
@@ -49,40 +49,39 @@ def pdf_parser(pdf_path, notebook_name):
         with open(output_md_path, "w", encoding="utf-8") as md_file:
             md_file.write("\n".join(md_output))
 
-        print(logger(f"Success! {pdf_path} has been processed!"))
+        print(logger(f"Success! {pdf_path} has been processed as extracted_{doc_name}.md!"))
 
     except Exception as e:
         print(logger(f"[!] Mission Failed: {e}"))
 
-def text_processor(filepath,notebook_name):
+
+def text_processor(filepath, notebook_name):
     if not (if_file_exists(filepath)):
         makedirs(notebook_name, exist_ok=True)
-        base_filename = path.basename(filepath)
-        doc_name = path.splitext(base_filename)[0]
+        base_input_file = path.basename(filepath)
+        doc_name = path.splitext(base_input_file)[0]
         output_md_path = path.join(notebook_name, f"extracted_{doc_name}.md")
 
-        source=open(filepath,'r')
-        source_data=source.read()
+        source = open(filepath, "r")
+        source_data = source.read()
         source.close()
 
         with open(output_md_path, "w", encoding="utf-8") as md_file:
             md_file.write("\n".join(source_data[i]))
 
-         print(logger(f"Success! {filepath} has been processed!"))
+        print(logger(f"Success! {filepath} has been processed!"))
     else:
         print(logger(f"File does not exist!"))
 
-def master_combiner(filename,output_file):
-   if (filename.startswith("extracted_"):
-       if not(remember_Me(filename)):
-           with open(output_file,"a+",encoding="utf-8") as destination:
-               with open(filename,"r",encoding="utf-8") as source:
-                   destination.writelines(source.readlines())
-       else:
-           logger(f"{filename} was already processed GigaBook-LM!")
-   else:
-       logger(f"{filename} was not processed by GigaBook-LM!")
+
+def master_file_creator(input_file, output_file):
+    if input_file.startswith("extracted_"):
+        if not (remember_Me(input_file)):
+            with open(output_file, "ab", encoding="utf-8") as destination, open(input_file, "rb", encoding="utf-8") as source:
+             copyfileobj(source,destination)
+        else
+            logger(f"{input_file} was already processed GigaBook-LM!")
+
 
 def chunk_provider(input_file):
-    with open(input_file,"r",encoding="utf-8") as f:
-        x=f.read()
+    pass

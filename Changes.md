@@ -27,4 +27,11 @@ Logs:
 > 16/06/26 - Thursday
 - Made extracted file names to have a prefix "extracted_"
 - Fixed a somewhat-critical bug in `rememeber_me()` from [basictools.py](/basictools.py)
+
+---
+> 28/04/26 - Tuesday
+- Quite some time has passed, and i guess the chunker logic is finally here, we'll see, and it's with my old frenemy **Docling**.
+- Bad news, cue drumroll, who's been messing up everything? It was **Docling** (again) all along :/ We do not allow "phone-homers"
+- Fixed a moderate bug in logger function
+- Thank you Github user [Tanishq Bhattacharjee](https://github.com/TanKaizokuO) for starring this repo.
 -
