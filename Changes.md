@@ -38,3 +38,4 @@ Logs:
 - So, we're gonna use references to build a RAG agent, so i found a youtube tutorial that's 5 hours long (🥀), and i can't sit through all of it. So, we will be using NotebookLM (yeah, i know, ironic)
 - Ah! Another stargazer  [Grady O'Connell ⭐](https://github.com/flipcoder) is here, thank you!
 - So, the idea for now, is to use a dumb LLM to test this out, and see how it works with the input i give it.
+- Contributors are now welcome, make sure to read the [contributing.md](/CONTRIBUTING.md)

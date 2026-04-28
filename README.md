@@ -24,4 +24,4 @@ Well, quite frankly, this is still under a **WORK IN PROGRESS (WIP)**, so i'm st
 
 ## Contribution
 
-I gotta be honest here, i definitely need some help, so if you wish, open an issue with the tag `Willing to Contribute` and your Discord handle, to Let me know you're interested to work on. And, i'll reach out to you directly to coordinate.
+For contributing, read the [contributing.md](/CONTRIBUTING.md) file to know how to contribute.

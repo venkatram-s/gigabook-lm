@@ -13,7 +13,7 @@
 
 1. **Fork and PR:** We do not grant direct push access. Submit your logic for audit. And, it will take time for auditing, so be patient.
 2. **One Feature per PR:** One feature per PR. Do not send us a "code refactor" that hides a backdoor, with lots of lines.
-3. **Documentation:** If you add a function, explain the logic. We don't do "Trust me, bro" code. And, no hate on **vibe-coding**, but this needs _a human touch_, and _a manual verification_
+3. **Documentation:** If you add a function, explain the logic. We don't do "Trust me, bro" code. And, no hate on **vibe-coding**, but this needs _a human touch_, and _a manual verification_. But, if you can't explain it properly, only then you can use AI.
 
 ## Standards to Follow
 1. **Strings:** 'Single quotes' only.
