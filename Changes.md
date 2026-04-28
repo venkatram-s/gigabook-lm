@@ -33,5 +33,8 @@ Logs:
 - Quite some time has passed, and i guess the chunker logic is finally here, we'll see, and it's with my old frenemy **Docling**.
 - Bad news, cue drumroll, who's been messing up everything? It was **Docling** (again) all along :/ We do not allow "phone-homers"
 - Fixed a moderate bug in logger function
-- Thank you Github user [Tanishq Bhattacharjee](https://github.com/TanKaizokuO) for starring this repo.
+- Thank you Github user [Tanishq Bhattacharjee ⭐](https://github.com/TanKaizokuO) for starring this repo.
 - Wait a minute, i googled my project, and found out, a website named "MachineBrief" has featured it? Huh. But, this so-called article talks about "Solana", that is something, i've never used, my guess is that it could be AI-generated? And, my guess is that it's a crypto website.
+- So, we're gonna use references to build a RAG agent, so i found a youtube tutorial that's 5 hours long (🥀), and i can't sit through all of it. So, we will be using NotebookLM (yeah, i know, ironic)
+- Ah! Another stargazer  [Grady O'Connell ⭐](https://github.com/flipcoder) is here, thank you!
+- So, the idea for now, is to use a dumb LLM to test this out, and see how it works with the input i give it.
