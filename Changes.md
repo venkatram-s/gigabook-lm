@@ -39,3 +39,4 @@ Logs:
 - Ah! Another stargazer  [Grady O'Connell ⭐](https://github.com/flipcoder) is here, thank you!
 - So, the idea for now, is to use a dumb LLM to test this out, and see how it works with the input i give it.
 - Contributors are now welcome, make sure to read the [contributing.md](/CONTRIBUTING.md)
+- Oh wait, another stargazer! [Zymacs](https://github.com/zymacs)
