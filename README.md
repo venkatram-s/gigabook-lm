@@ -10,12 +10,11 @@ An air-gapped, local-first RAG engine that can transform documents into lossless
 - *Asset Reusability*: You are **FREE** to use the processed files anywhere you want, be a free bird. Take and plug it into any AI chat, anywhere, whenever you want. Your work, your terms.
 
 ## Development Status:
-To be honest, this project is shaping up, so that GigaBookLM can get things on the right track. But meanwhile, here's what major features have been implemented so far:
-
-	- Text & Image Extraction from PDF's by `PyMuPDF`
-	- Master File Creation is done to automate concatenation of multiple parsed markdown documents into one main document.
-	- "Remember Me" System, a de-duplication system that verifies if a specific file has already been parsed and ingested, by hashing input files via SHA-256 algorithm.
-	- Interactive Onboarding to save config in a `config.json` file inside ~/.gigabook-lm.
+To be honest, this project is shaping up, so that GigaBookLM can get things on the right track. But meanwhile, here's what major features have been implemented so far: 
+- Text & Image Extraction from PDF's by `PyMuPDF`
+- Master File Creation is done to automate concatenation of multiple parsed markdown documents into one main document.
+- "Remember Me" System, a de-duplication system that verifies if a specific file has already been parsed and ingested, by hashing input files via SHA-256 algorithm.
+- Interactive Onboarding to save config in a `config.json` file inside ~/.gigabook-lm.
 
 ## ⭐ Stargazers ⭐
 - [Tanishq Bhattacharjee ⭐](https://github.com/TanKaizokuO)
@@ -27,4 +26,4 @@ To be honest, this project is shaping up, so that GigaBookLM can get things on t
 
 ## Contribution
 
-Contributors are most welcome! In order to contribute, read the contributing.md](/CONTRIBUTING.md) file.
+Contributors are most welcome! In order to contribute, read the [contributing.md](/CONTRIBUTING.md) file.
