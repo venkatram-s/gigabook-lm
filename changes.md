@@ -40,3 +40,16 @@ Logs:
 - So, the idea for now, is to use a dumb LLM to test this out, and see how it works with the input i give it.
 - Contributors are now welcome, make sure to read the [contributing.md](/CONTRIBUTING.md)
 - Oh wait, another stargazer! [Zymacs ⭐](https://github.com/zymacs)
+- **First Fork:** [zymacs/gigabook-lm](https://github.com/zymacs/gigabook-lm)
+  
+> 29/04/26 - Wednesday
+- I've got some midnight thoughts:
+  - I guess Human-moderated Peephole optimization is our friend.
+  - And, i think around some point of time, we might need `cpp`.
+  - What i'm going to say is insane, but for the sake of optimization, maybe, can we build RAG by `cpp`? I mean, afterall, this language is seriously known it's for performance and memory optimization, IF Handled right.
+  - Oh boy, this would definitely mean that, i have to write industry standard code, nice but still 💀
+  - Man, in the era of vibe coding, if we copy code from websites, and implement it here, and if we did understand how it works, it's genuine, and works better than sloppy code.
+  - I mean, if we go for a code that we cant understand, we're no longer working optimized (Inspired by Ayrton Senna's iconic quote).
+  - I guess i'm kind of a hypocrite here, because i don't understand how pymupdf works. So, i want to understand how it works. To be honest, It's more penny for my thoughts as ideology, and i could fail spectacularly in executing the optimization thing.
+ 
+- Well, i thought i'd remove web scraping, so that this remains air-gapped as said. But, if you guys wanna make modifications, go ahead, just like Queen's manager *Jim Beach* said **You can do what you want with my music, but don't make me boring**. But, my version will remain airgapped.
