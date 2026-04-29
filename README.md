@@ -1,27 +1,30 @@
 # GigaBookLM
 
-GigaBookLM is a local-first, telemetry-free private alternative to propeitary third-part AI-based research assistants. The idea is to turn documents into researchable assets that contain as much as information as the original information does, but it's more lightweight and reusable.
+An air-gapped, local-first RAG engine that can transform documents into lossless, reusable research assets, that contain as much as information as the source does, but it's more reusable.
 
 ## Motives (that's what get this running, right?)
-- Zero Cloud: Local, Private, Nothing gets out, Just you, your resources and the LLM you're chatting with
-- High Efficiency: Don't leave old, incapable hardware behind
-- Asset Reusability: Use it anywhere, wherever, you want, be a free bird
+- *Zero Cloud*: **GigaBookLM** is completely designed, to be local and private. So, it's just you, your resources, and the Large Language Model you're chatting with. 
 
-## Phases
-```mermaid
-graph TD
-    A[Raw PDFs/Docs] -->|PyMuPDF Extraction| B(Phase 1: Ingestion)
-    B -->|Binary Hashing| C(Phase 2: The Gatekeeper)
-    C -->|Sliding Window 120t| D(Phase 3: Surgical Chunking)
-    D -->|Asset Mapping| E(Phase 4: Multimodal Linker)
-    E -->|JSONL Compilation| F[The Digital Vault]
-    F -->|Local RAG| G(Inference / Chat)
-```
+- *High Efficiency & Legacy System Support*: This framework is designed to be highly resource-efficient, and through which, we support systems that have low specifications, like Integrated Graphics, low RAM, etc. But obviously, it does not mean that intelligence is a trade off for speed, we try our best to optimize the framework.
 
-## How to use this
+- *Asset Reusability*: You are **FREE** to use the processed files anywhere you want, be a free bird. Take and plug it into any AI chat, anywhere, whenever you want. Your work, your terms.
 
-Well, quite frankly, this is still under a **WORK IN PROGRESS (WIP)**, so i'm still figuring how GigaBookLM can be used
+## Development Status:
+To be honest, this project is shaping up, so that GigaBookLM can get things on the right track. But meanwhile, here's what major features have been implemented so far:
+
+	- Text & Image Extraction from PDF's by `PyMuPDF`
+	- Master File Creation is done to automate concatenation of multiple parsed markdown documents into one main document.
+	- "Remember Me" System, a de-duplication system that verifies if a specific file has already been parsed and ingested, by hashing input files via SHA-256 algorithm.
+	- Interactive Onboarding to save config in a `config.json` file inside ~/.gigabook-lm.
+
+## ⭐ Stargazers ⭐
+- [Tanishq Bhattacharjee ⭐](https://github.com/TanKaizokuO)
+- [Grady O'Connell ⭐](https://github.com/flipcoder)
+- [Zymacs ⭐](https://github.com/zymacs)
+- [svk2006 ⭐](https://github.com/svk2006)
+- [Ragul  ⭐](https://github.com/Ragul2105)
+
 
 ## Contribution
 
-For contributing, read the [contributing.md](/CONTRIBUTING.md) file to know how to contribute.
+Contributors are most welcome! In order to contribute, read the contributing.md](/CONTRIBUTING.md) file.
