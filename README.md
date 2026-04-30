@@ -20,8 +20,10 @@ To be honest, this project is shaping up, so that GigaBookLM can get things on t
 - [Tanishq Bhattacharjee ⭐](https://github.com/TanKaizokuO)
 - [Grady O'Connell ⭐](https://github.com/flipcoder)
 - [Zymacs ⭐](https://github.com/zymacs)
-- [svk2006 ⭐](https://github.com/svk2006)
-- [Ragul  ⭐](https://github.com/Ragul2105)
+- [svk2006⭐](https://github.com/svk2006)
+- [Ragul ⭐](https://github.com/Ragul2105)
+- [SPARK ⭐](https://github.com/sparkit-dev)
+- [Param Siddharth ⭐](https://github.com/sparkit-dev)
 
 
 ## Contribution
