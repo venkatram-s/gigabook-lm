@@ -3,11 +3,11 @@
 An air-gapped, local-first RAG engine that can transform documents into lossless, reusable research assets, that contain as much as information as the source does, but it's more reusable.
 
 ## Motives (that's what get this running, right?)
-- *Zero Cloud*: **GigaBookLM** is completely designed, to be local and private. So, it's just you, your resources, and the Large Language Model you're chatting with. 
+- **Zero Cloud**: **GigaBookLM** is completely designed, to be local and private. So, it's just you, your resources, and the Large Language Model you're chatting with. 
 
-- *High Efficiency & Legacy System Support*: This framework is designed to be resource-efficient, and this could mean that, it can technically run on computers with limited computing power.
+- **High Efficiency & Legacy System Support**: This framework is designed to be resource-efficient, and this could mean that, it can *technically* run on computers with *limited computing power*.
 
-- *Asset Reusability*: You are **FREE** to use the processed files anywhere you want, be a free bird. Take and plug it into any AI chat, anywhere, whenever you want. Your work, your terms.
+- **Asset Reusability**: You are **FREE** to use the processed files anywhere you want, be a free bird. Take and plug it into any AI chat, anywhere, whenever you want. Your work, your terms.
 
 ## Development Status:
 To be honest, this project is shaping up, so that GigaBookLM can get things on the right track. But meanwhile, here's what major features have been implemented so far: 
