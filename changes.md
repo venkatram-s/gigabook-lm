@@ -53,3 +53,10 @@ Logs:
   - I guess i'm kind of a hypocrite here, because i don't understand how pymupdf works. So, i want to understand how it works. To be honest, It's more penny for my thoughts as ideology, and i could fail spectacularly in executing the optimization thing.
  
 - Well, i thought i'd remove web scraping, so that this remains air-gapped as said. But, if you guys wanna make modifications, go ahead, just like Queen's manager *Jim Beach* said **You can do what you want with my music, but don't make me boring**. But, my version will remain airgapped.
+
+> 30/04/26 - Thursday
+- I'm thinking hypothetically, if we could somehow password protect `gatekeep.bin`, could this prevent anyone from accessing `gatekeep.bin`. Wait, why just that, we could password protect GigaBookLM, and it would be set by the user himself? OK, that password protection is a way too much of a stretch.
+- And, we could have a `notebook.json` to store things like `NoteBook_UID`, `NoteBook_Name`, `NoteBook_Source_Count`, `Source File Paths`.
+- Like, i previously said, i need to learn RAG. 
+- We need to build a docx parser too
+- 
