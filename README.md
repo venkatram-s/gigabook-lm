@@ -5,7 +5,7 @@ An air-gapped, local-first RAG engine that can transform documents into lossless
 ## Motives (that's what get this running, right?)
 - *Zero Cloud*: **GigaBookLM** is completely designed, to be local and private. So, it's just you, your resources, and the Large Language Model you're chatting with. 
 
-- *High Efficiency & Legacy System Support*: This framework is designed to be highly resource-efficient, and through which, we support systems that have low specifications, like Integrated Graphics, low RAM, etc. But obviously, it does not mean that intelligence is a trade off for speed, we try our best to optimize the framework.
+- *High Efficiency & Legacy System Support*: This framework is designed to be resource-efficient, and this could mean that, it can technically run on computers with limited computing power.
 
 - *Asset Reusability*: You are **FREE** to use the processed files anywhere you want, be a free bird. Take and plug it into any AI chat, anywhere, whenever you want. Your work, your terms.
 
