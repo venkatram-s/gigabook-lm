@@ -55,8 +55,15 @@ Logs:
 - Well, i thought i'd remove web scraping, so that this remains air-gapped as said. But, if you guys wanna make modifications, go ahead, just like Queen's manager *Jim Beach* said **You can do what you want with my music, but don't make me boring**. But, my version will remain airgapped.
 
 > 30/04/26 - Thursday
-- I'm thinking hypothetically, if we could somehow password protect `gatekeep.bin`, could this prevent anyone from accessing `gatekeep.bin`. Wait, why just that, we could password protect GigaBookLM, and it would be set by the user himself? OK, that password protection is a way too much of a stretch.
+- I'm thinking hypothetically, if we could somehow password protect `gatekeep.bin`, could this prevent anyone from accessing `gatekeep.bin`. Wait, why just that, we could password protect GigaBookLM, and it would be set by the user himself? OK, THIS IS A way too much of a STRETCH..
 - And, we could have a `notebook.json` to store things like `NoteBook_UID`, `NoteBook_Name`, `NoteBook_Source_Count`, `Source File Paths`.
 - Like, i previously said, i need to learn RAG. 
 - We need to build a docx parser too
-- 
+
+> 01/05/26 - Friday
+- I have a bad feeling that I am overhyping this idea, maybe what if it's just a plug-n-play thing? Like even if you use embedding models, LLM, first i need to learn RAG, what am i doing, for now, i need to focus on my exam right now. LIke, am i on the right track? i don't want to mess this up, i feel i overmarketed it.
+- OK, Like i promised, i am *not* willing to AI write code for me, but i want to check how right i am on the track, as a sophomore, for a project of this scale, i need better oversight, on what i'm doing.
+- FYI, i use gemini and claude to brainstorm and understand my ideas. But, it doesn't esactly understand my ideas, sometimes. Oh wait, Antigravity!
+- So, an embedding model is just trained on GB's of data, only to know car and automobiles can be different, based on context, only to return a couple of vectors. I know, it's not simple, But still...
+- Maybe, just maybe chunking is where we bring `cpp` in, you know?
+- OK, here's what i figured out: **Chunking, and then we hit the embedding model with the chunked data**

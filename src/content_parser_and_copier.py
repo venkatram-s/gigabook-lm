@@ -25,11 +25,7 @@ def pdf_parser(pdf_path, notebook_name):
                 if b["type"] == 0:
                     for line in b["lines"]:
                         for span in line["spans"]:
-                            clean_text = (
-                                span["text"]
-                                .replace("\u2002", " ")
-                                .replace("\u2003", " ")
-                            )
+                            clean_text = (span["text"].replace("\u2002", " ").replace("\u2003", " "))
                             md_output.append(clean_text)
 
                 elif b["type"] == 1:
