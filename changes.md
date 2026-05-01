@@ -67,3 +67,7 @@ Logs:
 - So, an embedding model is just trained on GB's of data, only to know car and automobiles can be different, based on context, only to return a couple of vectors. I know, it's not simple, But still...
 - Maybe, just maybe chunking is where we bring `cpp` in, you know?
 - OK, here's what i figured out: **Chunking, and then we hit the embedding model with the chunked data**
+- This is how it could work?
+```
+Feed Content → Turn to MD → Slice and Produce Chunks with C++ → Chunks2Vectors (with Embedding Models) → User asks a question → That question is first passed to a CPP script that can effectively seach with vectors produced by Chunks2Vectors, and possibly relevant content is produced, and is returned to the LLM → That LLm will return it in a gracious way
+```
