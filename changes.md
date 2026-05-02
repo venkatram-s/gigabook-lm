@@ -79,7 +79,7 @@ Feed Content → Turn to MD → Slice and Produce Chunks with C++ → Chunks2Vec
 ```
 Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce Chunks with C++ → Chunks2Vectors (with Embedding Models) → Vectors are sent to VectorDB → Now, User asks a question → That question is first passed to a CPP script that can effectively seach with vectors produced by Chunks2Vectors, and possibly relevant content is produced, and is returned to the LLM → That LLm will return it in a gracious way
 ```
-- This might not be how exactly this would be implemented, but it gives a mental model of how the app should look like.
+- This might not be how it would be implemented, but it gives me a mental model of how **GigaBookLM** should look like.
 - Definitely need to improve and re-invent MD structure
 - CPP function for chunking?
 - CPP function for fetching the best results from a vector DB?
@@ -87,3 +87,7 @@ Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce
   - Python can be linked with CPP by some sort of link
   - C++ can vector db, same case as above
   - **BUT**, how do we link c++ and llama cpp llm model?
+- What if we integrate chunking, while the source documents are converted to markdown?
+- **Claude** said this: ```Here's how real engineering works: Write it badly (get it working) → Measure it (find the bottleneck) → Refine it (write good code where it matters ```
+- Although, i said, i wanted to write the chunker in `cpp`, but to understand, let me write in `python`
+- That's it, no more logs today, i need a short break, it's been quite the blast!
