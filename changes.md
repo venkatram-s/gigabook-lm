@@ -84,6 +84,6 @@ Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce
 - CPP function for chunking?
 - CPP function for fetching the best results from a vector DB?
 - OK, this is a bit Crucial:
-  - Python can be linked with CPP by som sort of link
-  - C++ can vecytor db, same case as above
+  - Python can be linked with CPP by some sort of link
+  - C++ can vector db, same case as above
   - **BUT**, how do we link c++ and llama cpp llm model?
