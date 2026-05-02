@@ -71,3 +71,19 @@ Logs:
 ```
 Feed Content → Turn to MD → Slice and Produce Chunks with C++ → Chunks2Vectors (with Embedding Models) → User asks a question → That question is first passed to a CPP script that can effectively seach with vectors produced by Chunks2Vectors, and possibly relevant content is produced, and is returned to the LLM → That LLm will return it in a gracious way
 ```
+
+> 02/05/26 - Saturday
+- Finally, i figured it out.
+- I know i said, this project was supposed to be lightweight, but we need a real captain, that is Vector DB.
+- **Updated** This is how it could work?
+```
+Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce Chunks with C++ → Chunks2Vectors (with Embedding Models) → Vectors are sent to VectorDB → Now, User asks a question → That question is first passed to a CPP script that can effectively seach with vectors produced by Chunks2Vectors, and possibly relevant content is produced, and is returned to the LLM → That LLm will return it in a gracious way
+```
+- This might not be how exactly this would be implemented, but it gives a mental model of how the app should look like.
+- Definitely need to improve and re-invent MD structure
+- CPP function for chunking?
+- CPP function for fetching the best results from a vector DB?
+- OK, this is a bit Crucial:
+  - Python can be linked with CPP by som sort of link
+  - C++ can vecytor db, same case as above
+  - **BUT**, how do we link c++ and llama cpp llm model?

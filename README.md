@@ -23,7 +23,8 @@ To be honest, this project is shaping up, so that GigaBookLM can get things on t
 - [svk2006⭐](https://github.com/svk2006)
 - [Ragul ⭐](https://github.com/Ragul2105)
 - [SPARK ⭐](https://github.com/sparkit-dev)
-- [Param Siddharth ⭐](https://github.com/sparkit-dev)
+- [Param Siddharth ⭐](https://github.com/paramsiddharth)
+- [smkargo⭐](https://github.com/smkargo)
 
 
 ## Contribution
