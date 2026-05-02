@@ -89,5 +89,5 @@ Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce
   - **BUT**, how do we link c++ and llama cpp llm model?
 - What if we integrate chunking, while the source documents are converted to markdown?
 - **Claude** said this: ```Here's how real engineering works: Write it badly (get it working) → Measure it (find the bottleneck) → Refine it (write good code where it matters ```
-- Although, i said, i wanted to write the chunker in `cpp`, but to understand, let me write in `python`
+- Although, i said, i wanted to write the chunker in `cpp`, but to understand, let me write in `python`, then back to `cpp`.
 - That's it, no more logs today, i need a short break, it's been quite the blast!
