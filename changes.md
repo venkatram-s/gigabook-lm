@@ -89,5 +89,17 @@ Feed Content → Turn to MD → All MD's as Master MD File → Slice and Produce
   - **BUT**, how do we link c++ and llama cpp llm model?
 - What if we integrate chunking, while the source documents are converted to markdown?
 - **Claude** said this: ```Here's how real engineering works: Write it badly (get it working) → Measure it (find the bottleneck) → Refine it (write good code where it matters ```
-- Although, i said, i wanted to write the chunker in `cpp`, but to understand, let me write in `python`, then back to `cpp`.
+- Although, i said, i wanted to write the chunker in `cpp`, but to understand first, let me write in `python`, then back to `cpp`.
 - That's it, no more logs today, i need a short break, it's been quite the blast!
+
+> 04/06/26 - Monday
+- Well, i needed a break, and we're back.
+- Now, there might be development halts, my semester exams are around the block, i need to work on that first!
+- OK, now that out of the way, let's focus on Markdown.
+- Marker is heavy, nope.
+- If i were to be honest, before i make some changes in changing markdown structure, chunker is in the way, we need to make sure that it's easy-peasy
+- How do we make sure that a PDF knows the difference between regular text and code block?
+- There are a lot of, artifacts that need to be worked on, so, yeah.
+- If so, the pdf chunking could be a one big part, that totally defines this project.
+- And, i'm thinking, since content extraction from PDF's is hectic, for now, i'm going to focus on `markdown` and `text` files, to accelerate developement, WHICH doesn't mean that, PDF's will be skipped, but it's a future enhancement.
+- Now that the painful part is out of the way, we DEFINITELY need to focus on the chunker.

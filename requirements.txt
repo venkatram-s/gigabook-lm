@@ -1,1 +1,2 @@
 pyinputplus
+PyMuPDF
